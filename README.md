@@ -32,7 +32,7 @@ This project creates a beautiful animated heart with realistic vibration motion 
 
 ## 🎬 Demo 
 
-<video src="heart-demo.mp4" width="400" controls></video>
+![Heart Animation](heart-demo.gif)
 
 ---
 
