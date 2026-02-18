@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrating Glowing Heart</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+        }
+
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #98002e; 
+            transform: rotate(-45deg);
+            animation: zoom-vibrate 0.5s infinite alternate;
+            box-shadow: 0 0 20px rgba(134, 25, 53, 0.6), 
+                        0 0 30px rgba(94, 3, 30, 0.8), 
+                        0 0 40px rgba(92, 0, 6, 0.5), 
+                        0 0 50px rgba(152, 0, 46, 0.4);
+            border-radius: 10px 5px 10px 0;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #98002e; 
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(152, 0, 46, 0.3), 
+                        0 0 30px rgba(152, 0, 46, 0.5), 
+                        0 0 40px rgba(152, 0, 46, 0.3), 
+                        0 0 50px rgba(152, 0, 46, 0.4);
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        @keyframes zoom-vibrate {
+            0% {
+                transform: rotate(-45deg) scale(1);
+            }
+            100% {
+                transform: rotate(-45deg) scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>
