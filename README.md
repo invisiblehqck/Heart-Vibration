@@ -35,12 +35,6 @@ This project creates a beautiful animated heart with realistic vibration motion 
 
 ---
 
-## 🎬 Demo 
-
-![Heart Animation](heart-demo.gif)
-
----
-
 ## 📂 Project Structure
 
 vibrating-heart/
