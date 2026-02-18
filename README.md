@@ -4,6 +4,11 @@ A smooth and visually appealing **vibrating heart animation** built using pure f
 
 This project creates a beautiful animated heart with realistic vibration motion — perfect for learning CSS animation and creative UI design.
 
+## 🎬 Demo 
+
+![Heart Animation](heart-demo.gif)
+
+
 ---
 
 ## ✨ Features
